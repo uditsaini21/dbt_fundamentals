@@ -3,7 +3,7 @@
     materialized='table'
   )
 }}
-with SMP_USER_DATA  as (
+with stg_newfile  as (
    SELECT _MODIFIED AS MODIFIED_DATE_NEW,
 USER_ID,
 FULL_NAME,
