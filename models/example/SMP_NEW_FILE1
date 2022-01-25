@@ -3,7 +3,7 @@
     materialized='table'
   )
 }}
-with SMP_NEW_FILE as (
+with SMP_NEW_FILE1 as (
    SELECT _MODIFIED AS MODIFIED_DATE_NEW,
 USER_ID,
 FULL_NAME,
@@ -17,4 +17,4 @@ GENDER,
 STATE FROM "FIVETRAN_DATABASE"."SMP"."SMP_USER_DATA"
 )
 select *
-from SMP_NEW_FILE
+from SMP_NEW_FILE1
