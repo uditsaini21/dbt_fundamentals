@@ -17,4 +17,4 @@ GENDER,
 STATE FROM "FIVETRAN_DATABASE"."SMP"."SMP_USER_DATA"
 )
 select *
-from SMP_NEW_FILE1
+from stg_newfile
