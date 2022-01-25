@@ -19,3 +19,12 @@ models:
             tests:
                 - unique
                 - not_null
+
+  - name: SMP_NEW_FILE1
+    description: "A starter dbt model"
+    columns:
+         - name: USER_ID
+           description: "The Primary Key"
+           tests:
+               - unique
+               - not_null  
